@@ -1,0 +1,25 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "*.cob": "ACUCOBOL",
+    "*.COB": "ACUCOBOL",
+    "*.cbl": "ACUCOBOL",
+    "*.CBL": "ACUCOBOL",
+    "*.cblle": "ACUCOBOL",
+    "*.CBLLE": "ACUCOBOL",
+    "*.sqlcblle": "ACUCOBOL",
+    "*.SQLCBLLE": "ACUCOBOL",
+    "*.cobol": "ACUCOBOL",
+    "*.COBOL": "ACUCOBOL",
+    "*.scbl": "ACUCOBOL",
+    "*.SCBL": "ACUCOBOL",
+    "*.pco": "ACUCOBOL",
+    "*.PCO": "ACUCOBOL",
+    "*.eco": "ACUCOBOL",
+    "*.ECO": "ACUCOBOL",
+    "*.copy": "ACUCOBOL",
+    "*.COPY": "ACUCOBOL",
+    "*.cobcopy": "ACUCOBOL",
+    "*.COBCOPY": "ACUCOBOL"
+  }
+}

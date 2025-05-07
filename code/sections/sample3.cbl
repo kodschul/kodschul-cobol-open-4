@@ -1,0 +1,29 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SAMPLE3.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+        
+       01 START_NUMBER PIC 99.
+       01 CURRENT_NUMBER PIC 99 VALUE 0.
+           88 CURRENT_NUM_IS_ZERO VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN SECTION.
+           DISPLAY "Hello World".
+           PERFORM GET_INPUT.
+
+           MOVE START_NUMBER TO CURRENT_NUMBER.
+
+           PERFORM DEC_NUM UNTIL CURRENT_NUM_IS_ZERO.
+           STOP RUN.
+
+       GET_INPUT SECTION.
+           DISPLAY "Enter start number: ".
+           ACCEPT START_NUMBER.
+       DEC_NUM SECTION.
+           PERFORM SHOW_NUM.
+           SUBTRACT 1 FROM CURRENT_NUMBER.
+       SHOW_NUM SECTION.
+           DISPLAY CURRENT_NUMBER.
+           

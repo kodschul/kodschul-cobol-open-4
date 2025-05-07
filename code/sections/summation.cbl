@@ -1,0 +1,32 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. SUMMATION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+        
+       01 MAX_NUMBER PIC 99.
+       01 CURRENT_NUMBER PIC 99 VALUE 0.
+       01 SUM_NUMBER PIC 999 VALUE 0.
+
+
+       PROCEDURE DIVISION.
+       MAIN SECTION.
+           DISPLAY "Hello World".
+           PERFORM GET_INPUT.
+           PERFORM INC_INPUT MAX_NUMBER TIMES.
+           STOP RUN.
+
+       GET_INPUT SECTION.
+           DISPLAY "Enter max number: ".
+           ACCEPT MAX_NUMBER.
+
+       INC_INPUT SECTION.
+           ADD 1 TO CURRENT_NUMBER.
+           ADD CURRENT_NUMBER TO SUM_NUMBER.
+           PERFORM SHOW_INPUT.
+
+       SHOW_INPUT SECTION.
+           DISPLAY CURRENT_NUMBER.
+           DISPLAY "+" CURRENT_NUMBER.
+           DISPLAY "SUM = " SUM_NUMBER.
+           

@@ -1,0 +1,13 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. AddNumbers.
+       DATA DIVISION.
+       LINKAGE SECTION.
+       01 NUM1 PIC 9(3).
+       01 NUM2 PIC 9(3).
+       01 RESULT PIC 9(4).
+
+       PROCEDURE DIVISION USING NUM1, NUM2, RESULT.
+       ADD-LOGIC.
+           ADD NUM1 TO NUM2 GIVING RESULT.
+           EXIT PROGRAM.
+       END PROGRAM AddNumbers.
