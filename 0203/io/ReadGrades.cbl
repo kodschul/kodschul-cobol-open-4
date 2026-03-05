@@ -10,7 +10,7 @@
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-           SELECT GradesFile ASSIGN TO "grades.csv"
+           SELECT GradesFile ASSIGN TO "grades.txt"
                    ORGANIZATION IS LINE SEQUENTIAL.
 
        DATA DIVISION.
